@@ -135,13 +135,13 @@
     <Compile Include="Transaction\ThreadManager.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Jet.Framework.Utility\Jet.Framework.Utility.csproj">
       <Project>{e8b156d5-7ef3-45a8-9811-daa9b1f8818b}</Project>
       <Name>Jet.Framework.Utility</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
