@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{91
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jet.DE.Domain", "Business\Jet.DE.Domain\Jet.DE.Domain.csproj", "{9A74C24E-7C55-44FB-8632-0777BDC54D44}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{0167E686-95E6-40C6-99C7-769A5755E021}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0.Framework", "0.Framework", "{0167E686-95E6-40C6-99C7-769A5755E021}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jet.Framework.Utility", "Framework\Jet.Framework.Utility\Jet.Framework.Utility.csproj", "{E8B156D5-7EF3-45A8-9811-DAA9B1F8818B}"
 EndProject
