@@ -3,7 +3,30 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeploymentExplorer.WebUI", "DeploymentExplorer.WebUI\DeploymentExplorer.WebUI.csproj", "{49D64D9E-7238-4FA2-BEE2-A7221EFC15BE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jet.DE.Data", "Business\Jet.DE.Data\Jet.DE.Data.csproj", "{5A09B53D-2BCD-4DEB-85EE-C1019BE15DE6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{91DB0564-A006-4D8B-AA78-39A15CC01A1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jet.DE.Domain", "Business\Jet.DE.Domain\Jet.DE.Domain.csproj", "{9A74C24E-7C55-44FB-8632-0777BDC54D44}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{0167E686-95E6-40C6-99C7-769A5755E021}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jet.Framework.Utility", "Framework\Jet.Framework.Utility\Jet.Framework.Utility.csproj", "{E8B156D5-7EF3-45A8-9811-DAA9B1F8818B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jet.Framework.ObjectMapping", "Framework\Jet.Framework.ObjectMapping\Jet.Framework.ObjectMapping.csproj", "{DBC40E10-9630-49C5-BA31-E41E82AA7382}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{4F7A8D8D-5D17-47EF-975F-74A4AAB837AF}"
+	ProjectSection(SolutionItems) = preProject
+		Libs\mysql.data.dll = Libs\mysql.data.dll
+		Libs\Oracle.DataAccess.dll = Libs\Oracle.DataAccess.dll
+		Libs\System.Data.SQLite.dll = Libs\System.Data.SQLite.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jet.Framework.DataAccess", "Framework\Jet.Framework.DataAccess\Jet.Framework.DataAccess.csproj", "{5200925A-0D06-4079-B4F0-AD21B2889FAA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppShell", "AppShell", "{B7345F46-0FF0-4708-8B16-45160B9A886C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jet.DeploymentExplorer.WebUI", "AppShell\Jet.DeploymentExplorer.WebUI\Jet.DeploymentExplorer.WebUI.csproj", "{E129F223-A7BC-41C3-B972-188052EB6349}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +34,43 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{49D64D9E-7238-4FA2-BEE2-A7221EFC15BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{49D64D9E-7238-4FA2-BEE2-A7221EFC15BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{49D64D9E-7238-4FA2-BEE2-A7221EFC15BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{49D64D9E-7238-4FA2-BEE2-A7221EFC15BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A09B53D-2BCD-4DEB-85EE-C1019BE15DE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A09B53D-2BCD-4DEB-85EE-C1019BE15DE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A09B53D-2BCD-4DEB-85EE-C1019BE15DE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A09B53D-2BCD-4DEB-85EE-C1019BE15DE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A74C24E-7C55-44FB-8632-0777BDC54D44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A74C24E-7C55-44FB-8632-0777BDC54D44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A74C24E-7C55-44FB-8632-0777BDC54D44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A74C24E-7C55-44FB-8632-0777BDC54D44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8B156D5-7EF3-45A8-9811-DAA9B1F8818B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8B156D5-7EF3-45A8-9811-DAA9B1F8818B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8B156D5-7EF3-45A8-9811-DAA9B1F8818B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8B156D5-7EF3-45A8-9811-DAA9B1F8818B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBC40E10-9630-49C5-BA31-E41E82AA7382}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBC40E10-9630-49C5-BA31-E41E82AA7382}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBC40E10-9630-49C5-BA31-E41E82AA7382}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBC40E10-9630-49C5-BA31-E41E82AA7382}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5200925A-0D06-4079-B4F0-AD21B2889FAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5200925A-0D06-4079-B4F0-AD21B2889FAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5200925A-0D06-4079-B4F0-AD21B2889FAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5200925A-0D06-4079-B4F0-AD21B2889FAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E129F223-A7BC-41C3-B972-188052EB6349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E129F223-A7BC-41C3-B972-188052EB6349}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E129F223-A7BC-41C3-B972-188052EB6349}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E129F223-A7BC-41C3-B972-188052EB6349}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5A09B53D-2BCD-4DEB-85EE-C1019BE15DE6} = {91DB0564-A006-4D8B-AA78-39A15CC01A1F}
+		{9A74C24E-7C55-44FB-8632-0777BDC54D44} = {91DB0564-A006-4D8B-AA78-39A15CC01A1F}
+		{E8B156D5-7EF3-45A8-9811-DAA9B1F8818B} = {0167E686-95E6-40C6-99C7-769A5755E021}
+		{DBC40E10-9630-49C5-BA31-E41E82AA7382} = {0167E686-95E6-40C6-99C7-769A5755E021}
+		{5200925A-0D06-4079-B4F0-AD21B2889FAA} = {0167E686-95E6-40C6-99C7-769A5755E021}
+		{E129F223-A7BC-41C3-B972-188052EB6349} = {B7345F46-0FF0-4708-8B16-45160B9A886C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35;packages\Unity.Interception.2.1.505.0\lib\NET35;packages\EnterpriseLibrary.Common.5.0.505.0\lib\NET35;packages\EnterpriseLibrary.Data.5.0.505.0\lib\NET35
 	EndGlobalSection
 EndGlobal

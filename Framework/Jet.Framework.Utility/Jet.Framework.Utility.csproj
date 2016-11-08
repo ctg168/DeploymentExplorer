@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E8B156D5-7EF3-45A8-9811-DAA9B1F8818B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Jet.Framework.Utility</RootNamespace>
+    <AssemblyName>Jet.Framework.Utility</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\Libs\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activation" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AmountHelper.cs" />
+    <Compile Include="ApplyDataContractResolverAttribute.cs" />
+    <Compile Include="CollectionExtend\ArrayHelper.cs" />
+    <Compile Include="CollectionExtend\HashSetExtend.cs" />
+    <Compile Include="CollectionExtend\ObservableCollectionExtend.cs" />
+    <Compile Include="DateTime\DateTimeConvert.cs" />
+    <Compile Include="DateTime\DateTimeHelper.cs" />
+    <Compile Include="DebugHelper.cs" />
+    <Compile Include="DecimalHelper.cs" />
+    <Compile Include="EnumExtensions.cs" />
+    <Compile Include="ExceptionHelper.cs" />
+    <Compile Include="ExpressionHelper.cs" />
+    <Compile Include="CollectionExtend\IDictionaryExtend.cs" />
+    <Compile Include="CollectionExtend\IListExtend.cs" />
+    <Compile Include="Extend\ExceptionExtend.cs" />
+    <Compile Include="Extend\StringExtend.ChineseNO.cs" />
+    <Compile Include="Extend\StringExtend.cs" />
+    <Compile Include="FileHelper.cs" />
+    <Compile Include="FileIconHelper.cs" />
+    <Compile Include="FileSerializeHelper.cs" />
+    <Compile Include="HttpUploadHandlerBase.cs" />
+    <Compile Include="InvokeErrorResult.cs" />
+    <Compile Include="MutexHelper.cs" />
+    <Compile Include="ObjectCache.cs" />
+    <Compile Include="ObjectBase\IDynamicProperty.cs" />
+    <Compile Include="Safety\CustomerInfo.cs" />
+    <Compile Include="Safety\CodySafetyBase.cs" />
+    <Compile Include="Safety\CodySafetyFactory.cs" />
+    <Compile Include="Safety\CodySecrecyObjBase.cs" />
+    <Compile Include="Safety\Rockey2\Rockey2Helper.cs" />
+    <Compile Include="Safety\Rockey2\CodyRockey2Safety.cs" />
+    <Compile Include="Safety\RockeyArm\DongelDef.cs" />
+    <Compile Include="Safety\RockeyArm\CodyCertRockeyArm.cs" />
+    <Compile Include="Safety\RockeyArm\CodyPQRockeyArm.cs" />
+    <Compile Include="Safety\RockeyArm\CodyRockeyArmSafety.cs" />
+    <Compile Include="Safety\RockeyArm\RockeyArmHelper.cs" />
+    <Compile Include="Safety\RockeyArm\CodyPQEXRockeyArm.cs" />
+    <Compile Include="SecurityUtil\CodySecurityHelper2.cs" />
+    <Compile Include="SecurityUtil\CodySecurity_1.cs" />
+    <Compile Include="SecurityUtil\CodySecurityBase.cs" />
+    <Compile Include="SecurityUtil\CodySecurityFactory.cs" />
+    <Compile Include="SecurityUtil\CodySecurityHelper.cs" />
+    <Compile Include="Md5Helper.cs" />
+    <Compile Include="ObjectBase\DataEntity.cs" />
+    <Compile Include="ObjectBase\NotifyBase.cs" />
+    <Compile Include="ObjectClone\IObjectClone.cs" />
+    <Compile Include="ObjectClone\ObjectCloneExtend.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandomHelper\CodyRandomer.cs" />
+    <Compile Include="RandomHelper\RandomHelper.cs" />
+    <Compile Include="ReflectionHelper.cs" />
+    <Compile Include="Rtf\RichTextBoxInsertImageHelper.cs" />
+    <Compile Include="Rtf\RtfHelper.cs" />
+    <Compile Include="SerializeHelper\SerializeHelper.cs" />
+    <Compile Include="SerializeHelper\SerializeHelper.Extent.cs" />
+    <Compile Include="SerializeHelper\SerializeHelper.Extent2.cs" />
+    <Compile Include="SingleAppMutex.cs" />
+    <Compile Include="SmartObjectSerialize\SmartObjectDeserializer.cs" />
+    <Compile Include="SmartObjectSerialize\SmartSerializeHelper.cs" />
+    <Compile Include="SmartObjectSerialize\SmartObjectSerializer.cs" />
+    <Compile Include="StringHelper.cs" />
+    <Compile Include="TimeEstimation.cs" />
+    <Compile Include="DocConvert\EDocTransformAttribute.cs" />
+    <Compile Include="TimeRangeHelper\TimeRange.cs" />
+    <Compile Include="TimeRangeHelper\WorkRange.cs" />
+    <Compile Include="WCFExtend\WcfBehaviorAttributeBase.cs" />
+    <Compile Include="WCFExtend\WcfErrorBehavior.cs" />
+    <Compile Include="WCFExtend\WcfErrorBehaviorAttribute.cs" />
+    <Compile Include="WCFExtend\WcfSilverlightFaultBehavior.cs" />
+    <Compile Include="WCFExtend\WcfSilverlightFaultBehaviorAttribute.cs" />
+    <Compile Include="WCF\ClientEndpointBehavior.cs" />
+    <Compile Include="WCF\ClientMessageInspector.cs" />
+    <Compile Include="WCF\ServiceClientFactory.cs" />
+    <Compile Include="WCF\WcfHelper.cs" />
+    <Compile Include="Zip\GZipHelper.cs" />
+    <Compile Include="Zip\SharpZipHelper.cs" />
+    <Compile Include="SqlCommon.cs" />
+    <Compile Include="TupleEx.cs" />
+    <Compile Include="WCFExtend\HttpFaultBehavior.cs" />
+    <Compile Include="WCFExtend\HttpFaultMessageInspector.cs" />
+    <Compile Include="WCFExtend\SvcServiceHostFactory.cs" />
+    <Compile Include="Zip\SharpZipHelper.FileZip.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
